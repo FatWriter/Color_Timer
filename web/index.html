@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Color_Timer_Simulation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="keywords" content="Color_Timer_Ultra" />
+        <meta name="description" content="Color_Timer" /> 
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <style>
+            body{
+                background-image: url('image/gather.jpg');
+                background-repeat:no-repeat;
+                /*background-size:cover;
+                  background-attachment:fixed;*/
+                background-position-x: center;
+                color:rgb(255,220,1);
+                font-size:5vmin;
+                font-weight:600;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width: 20%;margin-left: 40%;text-align: center;">选择你的英雄！</div>
+        <div class="box1" name="left">
+            <input type="button" class="equp1" id="U" style="background-image:url('image/Beta_Spark.jpg')" onclick="BtnOnclickU()">
+            <input type="button" class="equp2" id="L" style="background-image:url('image/Lions_eye.jpg')" onclick="BtnOnclickL()">
+        </div>
+        <div class="box2" name="right">
+            <input type="button" class="equp3" id="T" style="background-image:url('image/Prism_Spark.jpg')" onclick="BtnOnclickT()">
+            <input type="button" class="equp4" id="N" style="background-image:url('image/Evolution_Truster.jpg')" onclick="BtnOnclickN()">
+        </div>
+    </body>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+                function BtnOnclickU() {
+                    let id = document.getElementById("U").id;
+                    if (id !== "null" || id !== null) {
+                        window.location.href = "CT_U.html";
+                    }
+                }
+                function BtnOnclickL() {
+                    let id = document.getElementById("L").id;
+                    if (id !== "null" || id !== null) {
+                        window.location.href = "CT_L.html";
+                    }
+                }
+                function BtnOnclickT() {
+                    let id = document.getElementById("T").id;
+                    if (id !== "null" || id !== null) {
+                        window.location.href = "CT_T.html";
+                    }
+                }
+                function BtnOnclickN() {
+                    let id = document.getElementById("N").id;
+                    if (id !== "null" || id !== null) {
+                        window.location.href = "CT_N.html";
+                    }
+                }
+    </script>
+</html>
